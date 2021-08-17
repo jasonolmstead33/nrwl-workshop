@@ -6,7 +6,7 @@ export default {
   title: 'Header',
 } as Meta;
 
-const Template: Story<> = (args) => <Header {...args} />;
+const Template: Story = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {};
