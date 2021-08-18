@@ -50,7 +50,7 @@ export const App = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <Header title="Board Game Hoard" />
       <div className={styles.container}>
         <div className={styles['games-layout']}>
@@ -94,7 +94,7 @@ export const App = () => {
         </div>
         <Route path="/game/:id" component={StoreFeatureGameDetail} />
       </div>
-    </>
+    </div>
   );
 };
 
