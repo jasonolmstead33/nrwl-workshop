@@ -27,7 +27,7 @@ export const App = () => {
     loadingState: 'success',
   });
 
-  console.log("...")
+  console.log("different string")
 
   useEffect(() => {
     setState((state) => ({
