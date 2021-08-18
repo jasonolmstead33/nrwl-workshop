@@ -8,9 +8,7 @@ jobs:
     name: Install deps
     steps:
       - uses: actions/checkout@v1
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install # will run `yarn install` command
+      - uses: bahmutov/npm-install@v1.4.5
       - run: yarn run nx affected --target=lint
   # build:
   #   runs-on: ubuntu-latest
