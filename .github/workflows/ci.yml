@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
-      - run: yarn run nx affected --target=lint
+      - run: npm run nx affected -- --target=lint
   # build:
   #   runs-on: ubuntu-latest
   #   name: Building affected apps
