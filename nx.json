@@ -59,6 +59,9 @@
     "store-util-formatters": {
       "tags": ["scope:store", "type:util"]
     },
+    "test-app": {
+      "tags": ["scope:test-app"]
+    },
     "util-interface": {
       "tags": ["scope:shared", "type:util"]
     }
