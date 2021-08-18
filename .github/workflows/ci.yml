@@ -5,6 +5,14 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Install deps
+    steps:
+      - uses: actions/checkout@v1
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install # will run `yarn install` command
+  build:
+    runs-on: ubuntu-latest
     name: Building affected apps
     steps:
       - uses: actions/checkout@v1
